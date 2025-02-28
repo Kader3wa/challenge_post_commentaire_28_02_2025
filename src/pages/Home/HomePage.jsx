@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import PostList from "../../component/Post/PostList";
 import LoadingComponent from "../../component/Loading/LoadingComponent";
+import NavComponent from "../../component/Nav/NavComponent";
 
 const HomePage = () => {
 
@@ -15,6 +16,9 @@ const HomePage = () => {
 
     return (
         <>
+            <header>
+                <NavComponent />
+            </header>
             {error && <p className={"error"}>{error}</p>}
             <PostList />
         </>

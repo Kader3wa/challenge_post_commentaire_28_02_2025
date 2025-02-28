@@ -44,7 +44,10 @@ const commentSlice = createSlice({
             })
             .addCase(addComment.fulfilled, (state, action) => {
                 state.isLoading = false
-                state.comments.push(action.payload)
+                state.comments.push({
+                    ...action.payload,
+                    id: state.comments.length + 1
+                })
             })
             .addCase(addComment.rejected, (state, action) => {
                 state.isLoading = false

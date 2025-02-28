@@ -1,8 +1,6 @@
 import axios from "axios";
 
-const API_ENDPOINT = axios.create({
-    baseURL: 'https://jsonplaceholder.typicode.com/'
-});
+const API_ENDPOINT = 'https://jsonplaceholder.typicode.com/';
 
 const usePostApi = () => {
     const getPosts = async () => {

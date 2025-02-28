@@ -1,7 +1,13 @@
+import NavComponent from "../../component/Nav/NavComponent";
+import PostCreateComponent from "../../component/Post/PostCreateComponent";
+
 const CreatePostPage = () => {
     return (
         <>
-            <h1>Create Post</h1>
+            <header>
+                <NavComponent />
+            </header>
+            <PostCreateComponent />
         </>
     );
 }
