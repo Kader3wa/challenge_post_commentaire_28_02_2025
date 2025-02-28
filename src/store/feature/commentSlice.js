@@ -21,6 +21,7 @@ const commentSlice = createSlice({
     name: "comment",
     initialState: {
         comments: [],
+
         isLoading: false,
         error: null
     },
